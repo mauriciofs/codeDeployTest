@@ -1,0 +1,19 @@
+{
+  "name": "code-deploy-test",
+  "version": "1.0.0",
+  "description": "Testing AWS Code Deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciofs/codeDeployTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriciofs/codeDeployTest/issues"
+  },
+  "homepage": "https://github.com/mauriciofs/codeDeployTest#readme"
+}
