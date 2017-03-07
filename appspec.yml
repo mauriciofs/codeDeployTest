@@ -12,7 +12,7 @@ permissions:
 hooks:
   AfterInstall:
     - location: deployment/afterInstall.sh
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: deployment/applicationStart.sh
       runas: root
