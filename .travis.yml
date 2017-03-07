@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- 6.2.0
+branches:
+  only:
+  - master
+sudo: required
+deploy:
+  provider: codedeploy
+  access_key_id: AKIAJQ265ZZOT7HY4LLQ
+  secret_access_key:
+    secure: E9qfzlRafpO9Lrmjtfkmhr9umdjtLKWcZ0CdgZfXuUfUW2ZlD8mPCULMI4tbAM0ZP4rU7R9KQTy+UpDxJWjy7O+gxrgVh1KtmaiXrwTukvQEpFqDMSb81XIMIRsyzruOfZT6jGvnssg9TIy9oro2susPdd8bheQr9jyv0YMT2z0N/8MCcqTXLEWVU44jJJlVdMpkxNMT9mixk9oKSaHOpmoOKHok7hz+EqI0N4NkXEHapJgSdQqli71RV3buO/Xjt4bKxVe9k2WkQbBS8laALrxQDM/7BLAsmcvb0R5+JovHHD8hSDxivo3bdpEXEYhJk0iZ4F6WWzYasAjZpT8KTbk26OVMGIpLyDbRWFzBg8nsAD4l/VX7jzcCfwSPmgFvnrLyOam0USei+wHrdJQOCYvJZadDBiDapJjTyokE+aoHTh6f8G293QAwJDRdORmOlWRQQdWZxIEDJ+pveQ0Bd1QdjNoHPPlG2lQQsSGnkyxQpTxb9xYS3uGwICNn4zz8/Q//hfGWtLiKb8HjOvpQAHtmer06qUmhoeHh3EUz0gh1eJHIRRhqua9B1Po2LAZCRx6Y32YexZ3v5L/nlFKNM/oRvtE41P8xYWE5ttqz/BMUmiMsTA60LA3vnD/KY/pyl3I9wsIkOf9IiFwGHtFpORKDDl+TrJOsbJ4YSfWxE5U=
+  application: PlayWeather
+  deployment_group: production
+  region: eu-west-1
+  revision_type: github
+  wait-until-deployed: true
+  on:
+    repo: mauriciofs/codeDeployTest
